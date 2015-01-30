@@ -1,68 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20150130 15:47:51.401" generator="Robot 2.8.7 (Python 2.7.9 on win32)">
-<suite source="c:\Parkko\thaibev_parkko\ATDD\TestCal.txt" id="s1" name="TestCal">
-<test id="s1-t1" name="ทดสอบการคำนวนเงินทอนรถเลขทะเบียนสฬ5420">
+<robot generated="20150130 16:55:18.881" generator="Robot 2.8.7 (Python 2.7.9 on win32)">
+<suite source="c:\Parkko\thaibev_parkko\ATDD\TestColor.txt" id="s1" name="TestColor">
+<test id="s1-t1" name="ทดสอบ ParkLady Case 1">
 <kw type="kw" name="Selenium2Library.Open Browser">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>${URLPRD}</arg>
 </arguments>
-<msg timestamp="20150130 15:47:51.682" level="INFO">Opening browser 'firefox' to base url 'http://27.254.142.76:9090/web/Search.jsp'</msg>
-<status status="PASS" endtime="20150130 15:47:58.376" starttime="20150130 15:47:51.682"></status>
+<msg timestamp="20150130 16:55:19.443" level="INFO">Opening browser 'firefox' to base url 'http://27.254.142.76:9090/web/LadyPark.jsp'</msg>
+<status status="PASS" endtime="20150130 16:55:29.692" starttime="20150130 16:55:19.443"></status>
 </kw>
-<kw type="kw" name="Selenium2Library.Input Text">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
 <arguments>
-<arg>carNumber</arg>
-<arg>สฬ5420</arg>
+<arg>Park1</arg>
+<arg>77BB44</arg>
 </arguments>
-<msg timestamp="20150130 15:47:58.376" level="INFO">Typing text 'สฬ5420' into text field 'carNumber'</msg>
-<status status="PASS" endtime="20150130 15:47:58.501" starttime="20150130 15:47:58.376"></status>
-</kw>
-<kw type="kw" name="Selenium2Library.Click Button">
-<doc>Clicks a button identified by `locator`.</doc>
-<arguments>
-<arg>searchBtn</arg>
-</arguments>
-<msg timestamp="20150130 15:47:58.501" level="INFO">Clicking button 'searchBtn'.</msg>
-<status status="PASS" endtime="20150130 15:48:02.063" starttime="20150130 15:47:58.501"></status>
-</kw>
-<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
-<doc>Waits until `text` appears on current page.</doc>
-<arguments>
-<arg>70.00 บาท</arg>
-</arguments>
+<msg timestamp="20150130 16:55:29.692" level="INFO">Verifying element 'Park1' contains text '77BB44'.</msg>
 <kw type="kw" name="Selenium2Library.Capture Page Screenshot">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
 <arguments>
 </arguments>
-<msg timestamp="20150130 15:48:07.188" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20150130 15:48:07.188" starttime="20150130 15:48:07.094"></status>
+<msg timestamp="20150130 16:55:29.817" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150130 16:55:29.817" starttime="20150130 16:55:29.755"></status>
 </kw>
-<msg timestamp="20150130 15:48:07.188" level="FAIL">Text '70.00 บาท' did not appear in 5 seconds</msg>
-<status status="FAIL" endtime="20150130 15:48:07.188" starttime="20150130 15:48:02.063"></status>
+<msg timestamp="20150130 16:55:29.817" level="FAIL">Element 'Park1' should have contained text '77BB44' but its text was ''.</msg>
+<status status="FAIL" endtime="20150130 16:55:29.817" starttime="20150130 16:55:29.692"></status>
 </kw>
 <doc></doc>
 <tags>
-<tag>5420</tag>
+<tag>Pink</tag>
 </tags>
-<status status="FAIL" endtime="20150130 15:48:07.188" critical="yes" starttime="20150130 15:47:51.667">Text '70.00 บาท' did not appear in 5 seconds</status>
+<status status="FAIL" endtime="20150130 16:55:29.817" critical="yes" starttime="20150130 16:55:19.443">Element 'Park1' should have contained text '77BB44' but its text was ''.</status>
+</test>
+<test id="s1-t2" name="ทดสอบ ParkLady Case 2">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URLPRD}</arg>
+</arguments>
+<msg timestamp="20150130 16:55:29.834" level="INFO">Opening browser 'firefox' to base url 'http://27.254.142.76:9090/web/LadyPark.jsp'</msg>
+<status status="PASS" endtime="20150130 16:55:36.017" starttime="20150130 16:55:29.834"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>Park1</arg>
+<arg>77BB44</arg>
+</arguments>
+<msg timestamp="20150130 16:55:36.017" level="INFO">Verifying element 'Park1' contains text '77BB44'.</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20150130 16:55:36.267" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150130 16:55:36.267" starttime="20150130 16:55:36.126"></status>
+</kw>
+<msg timestamp="20150130 16:55:36.267" level="FAIL">Element 'Park1' should have contained text '77BB44' but its text was ''.</msg>
+<status status="FAIL" endtime="20150130 16:55:36.267" starttime="20150130 16:55:36.017"></status>
+</kw>
+<doc></doc>
+<tags>
+<tag>Green</tag>
+</tags>
+<status status="FAIL" endtime="20150130 16:55:36.267" critical="yes" starttime="20150130 16:55:29.817">Element 'Park1' should have contained text '77BB44' but its text was ''.</status>
 </test>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="FAIL" endtime="20150130 15:48:07.188" starttime="20150130 15:47:51.401"></status>
+<status status="FAIL" endtime="20150130 16:55:36.267" starttime="20150130 16:55:18.881"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
 </total>
 <tag>
-<stat info="" links="" doc="" combined="" pass="0" fail="1">5420</stat>
+<stat info="" links="" doc="" combined="" pass="0" fail="1">Green</stat>
+<stat info="" links="" doc="" combined="" pass="0" fail="1">Pink</stat>
 </tag>
 <suite>
-<stat fail="1" pass="0" id="s1" name="TestCal">TestCal</stat>
+<stat fail="2" pass="0" id="s1" name="TestColor">TestColor</stat>
 </suite>
 </statistics>
 <errors>
