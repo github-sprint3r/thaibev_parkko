@@ -60,7 +60,7 @@
           <tr>
               <td colspan="2" align="center">
 	<br/>
-                  <input type="submit" value="คำนวนเงินทอน" />
+                  <input type="submit" value="คำนวนเงินทอน" id = "calculateBtn" />
               </td>
           </tr>
       </table>

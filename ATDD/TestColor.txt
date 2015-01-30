@@ -8,10 +8,10 @@ ${URLPRD}    http://27.254.142.76:9090/web/LadyPark.jsp
 ทดสอบ ParkLady Case 1
 	[Tags]    Pink
 	Open Browser    ${URLPRD}
-	Element Should Contain    Park1    77bb44
-	Element Should Contain    Park2    77bb44
-	Element Should Contain    Park3    77bb44
-	Element Should Contain    Park4    77bb44
+	Element Should Contain    Park1    77BB44
+	Element Should Contain    Park2    77BB44
+	Element Should Contain    Park3    77BB44
+	Element Should Contain    Park4    77BB44
 
 	Click Element   Park1
 	Click Element   Park2
@@ -49,10 +49,10 @@ ${URLPRD}    http://27.254.142.76:9090/web/LadyPark.jsp
 ทดสอบ ParkLady Case 2
 	[Tags]    Green
 	Open Browser    ${URLPRD}
-	Element Should Contain    Park1    77bb44
-	Element Should Contain    Park2    77bb44
-	Element Should Contain    Park3    77bb44
-	Element Should Contain    Park4    77bb44
+	Element Should Contain    Park1    77BB44
+	Element Should Contain    Park2    77BB44
+	Element Should Contain    Park3    77BB44
+	Element Should Contain    Park4    77BB44
 
 	Click Element   Park1
 	Click Element   Park2
@@ -74,10 +74,10 @@ ${URLPRD}    http://27.254.142.76:9090/web/LadyPark.jsp
 	Click Element   Park3
 	Click Element   Park4
 
-	Element Should Contain    Park1    77bb44
-	Element Should Contain    Park2    77bb44
-	Element Should Contain    Park3    77bb44
-	Element Should Contain    Park4    77bb44
+	Element Should Contain    Park1    77BB44
+	Element Should Contain    Park2    77BB44
+	Element Should Contain    Park3    77BB44
+	Element Should Contain    Park4    77BB44
 
 	Element Text Should Be    Park1    ${EMPTY}
 	Element Text Should Be    Park2    ${EMPTY}
@@ -85,10 +85,10 @@ ${URLPRD}    http://27.254.142.76:9090/web/LadyPark.jsp
 	Element Text Should Be    Park4    ${EMPTY}
 	
 	Refresh Browser
-	Element Should Contain    Park1    77bb44
-	Element Should Contain    Park2    77bb44
-	Element Should Contain    Park3    77bb44
-	Element Should Contain    Park4    77bb44
+	Element Should Contain    Park1    77BB44
+	Element Should Contain    Park2    77BB44
+	Element Should Contain    Park3    77BB44
+	Element Should Contain    Park4    77BB44
 
 	Element Text Should Be    Park1    ${EMPTY}
 	Element Text Should Be    Park2    ${EMPTY}
