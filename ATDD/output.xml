@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20150130 14:46:22.280" generator="Robot 2.8.7 (Python 2.7.9 on win32)">
+<robot generated="20150130 15:14:33.978" generator="Robot 2.8.7 (Python 2.7.9 on win32)">
 <suite source="c:\Parkko\thaibev_parkko\ATDD\TestCal.txt" id="s1" name="TestCal">
 <test id="s1-t1" name="ทดสอบการคำนวนเงินทอนรถเลขทะเบียนสฬ5420">
 <kw type="kw" name="Selenium2Library.Open Browser">
@@ -7,8 +7,8 @@
 <arguments>
 <arg>${URLPRD}</arg>
 </arguments>
-<msg timestamp="20150130 14:46:24.156" level="INFO">Opening browser 'firefox' to base url 'http://27.254.142.76:9090/web/Search.jsp'</msg>
-<status status="PASS" endtime="20150130 14:46:43.223" starttime="20150130 14:46:24.156"></status>
+<msg timestamp="20150130 15:14:35.025" level="INFO">Opening browser 'firefox' to base url 'http://27.254.142.76:9090/web/Search.jsp'</msg>
+<status status="PASS" endtime="20150130 15:14:53.238" starttime="20150130 15:14:35.025"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Input Text">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -16,29 +16,36 @@
 <arg>carNumber</arg>
 <arg>สฬ5420</arg>
 </arguments>
-<msg timestamp="20150130 14:46:43.223" level="INFO">Typing text 'สฬ5420' into text field 'carNumber'</msg>
-<status status="PASS" endtime="20150130 14:46:43.974" starttime="20150130 14:46:43.223"></status>
+<msg timestamp="20150130 15:14:53.238" level="INFO">Typing text 'สฬ5420' into text field 'carNumber'</msg>
+<status status="PASS" endtime="20150130 15:15:03.088" starttime="20150130 15:14:53.238"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Click Button">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>searchBtn</arg>
 </arguments>
-<msg timestamp="20150130 14:46:43.974" level="INFO">Clicking button 'searchBtn'.</msg>
+<msg timestamp="20150130 15:15:03.088" level="INFO">Clicking button 'searchBtn'.</msg>
+<status status="PASS" endtime="20150130 15:15:08.872" starttime="20150130 15:15:03.088"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>70.00 บาท</arg>
+</arguments>
 <kw type="kw" name="Selenium2Library.Capture Page Screenshot">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
 <arguments>
 </arguments>
-<msg timestamp="20150130 14:46:44.849" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20150130 14:46:44.849" starttime="20150130 14:46:44.724"></status>
+<msg timestamp="20150130 15:15:14.300" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150130 15:15:14.300" starttime="20150130 15:15:13.925"></status>
 </kw>
-<msg timestamp="20150130 14:46:44.849" level="FAIL">ValueError: Element locator 'searchBtn' did not match any elements.</msg>
-<status status="FAIL" endtime="20150130 14:46:44.849" starttime="20150130 14:46:43.974"></status>
+<msg timestamp="20150130 15:15:14.316" level="FAIL">Text '70.00 บาท' did not appear in 5 seconds</msg>
+<status status="FAIL" endtime="20150130 15:15:14.316" starttime="20150130 15:15:08.872"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="FAIL" endtime="20150130 14:46:44.849" critical="yes" starttime="20150130 14:46:24.140">ValueError: Element locator 'searchBtn' did not match any elements.</status>
+<status status="FAIL" endtime="20150130 15:15:14.316" critical="yes" starttime="20150130 15:14:35.025">Text '70.00 บาท' did not appear in 5 seconds</status>
 </test>
 <test id="s1-t2" name="ทดสอบการคำนวนเงินทอนรถเลขทะเบียนฌข1597">
 <kw type="kw" name="Selenium2Library.Open Browser">
@@ -46,8 +53,8 @@
 <arguments>
 <arg>${URLPRD}</arg>
 </arguments>
-<msg timestamp="20150130 14:46:44.849" level="INFO">Opening browser 'firefox' to base url 'http://27.254.142.76:9090/web/Search.jsp'</msg>
-<status status="PASS" endtime="20150130 14:47:07.863" starttime="20150130 14:46:44.849"></status>
+<msg timestamp="20150130 15:15:14.316" level="INFO">Opening browser 'firefox' to base url 'http://27.254.142.76:9090/web/Search.jsp'</msg>
+<status status="PASS" endtime="20150130 15:15:21.996" starttime="20150130 15:15:14.316"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Input Text">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -55,34 +62,41 @@
 <arg>carNumber</arg>
 <arg>ฌข1597</arg>
 </arguments>
-<msg timestamp="20150130 14:47:07.863" level="INFO">Typing text 'ฌข1597' into text field 'carNumber'</msg>
-<status status="PASS" endtime="20150130 14:47:09.587" starttime="20150130 14:47:07.863"></status>
+<msg timestamp="20150130 15:15:21.996" level="INFO">Typing text 'ฌข1597' into text field 'carNumber'</msg>
+<status status="PASS" endtime="20150130 15:15:22.137" starttime="20150130 15:15:21.996"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Click Button">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>searchBtn</arg>
 </arguments>
-<msg timestamp="20150130 14:47:09.587" level="INFO">Clicking button 'searchBtn'.</msg>
+<msg timestamp="20150130 15:15:22.137" level="INFO">Clicking button 'searchBtn'.</msg>
+<status status="PASS" endtime="20150130 15:15:22.496" starttime="20150130 15:15:22.137"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>1,330.00 บาท</arg>
+</arguments>
 <kw type="kw" name="Selenium2Library.Capture Page Screenshot">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
 <arguments>
 </arguments>
-<msg timestamp="20150130 14:47:09.696" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20150130 14:47:09.696" starttime="20150130 14:47:09.618"></status>
+<msg timestamp="20150130 15:15:28.267" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150130 15:15:28.267" starttime="20150130 15:15:27.593"></status>
 </kw>
-<msg timestamp="20150130 14:47:09.696" level="FAIL">ValueError: Element locator 'searchBtn' did not match any elements.</msg>
-<status status="FAIL" endtime="20150130 14:47:09.696" starttime="20150130 14:47:09.587"></status>
+<msg timestamp="20150130 15:15:28.267" level="FAIL">Text '1,330.00 บาท' did not appear in 5 seconds</msg>
+<status status="FAIL" endtime="20150130 15:15:28.267" starttime="20150130 15:15:22.496"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="FAIL" endtime="20150130 14:47:09.696" critical="yes" starttime="20150130 14:46:44.849">ValueError: Element locator 'searchBtn' did not match any elements.</status>
+<status status="FAIL" endtime="20150130 15:15:28.267" critical="yes" starttime="20150130 15:15:14.316">Text '1,330.00 บาท' did not appear in 5 seconds</status>
 </test>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="FAIL" endtime="20150130 14:47:09.712" starttime="20150130 14:46:22.280"></status>
+<status status="FAIL" endtime="20150130 15:15:28.267" starttime="20150130 15:14:33.978"></status>
 </suite>
 <statistics>
 <total>

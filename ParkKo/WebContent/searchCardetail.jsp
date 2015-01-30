@@ -13,7 +13,7 @@ request.setCharacterEncoding("UTF8");
 	String carNumber = request.getParameter("carNumber");
 	carNumber += "|";
 	// String paths="C:\\Users\\st\\workspace\\ParkKo\\WebContent\\Database\\CarDB.txt"; 
-	String paths= getServletContext().getRealPath("Database\\CarDB.txt"); 
+	String paths= getServletContext().getRealPath("Database/CarDB.txt"); 
 	
 	BufferedReader br = new BufferedReader(
 							new InputStreamReader(
