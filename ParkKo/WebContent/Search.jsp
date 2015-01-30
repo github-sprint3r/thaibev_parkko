@@ -4,14 +4,16 @@
 <title>ParkKo</title>
 </head>
 <body>
-  <div style="text-align:center">
-  <label for="male">กรุณากรอกทะเบียนทะเบียนรถ</label>
-      <br/>
-      <br/>
-      <input type="Text" name="carNumber" id="carNumber" value="" />
-      <br /><br/>
-      <input type="submit" value="Submit" />
-      </div>
-      </body>
-      </html>
-      
+<center>
+<form method="post" action="searchCardetail.jsp">
+        <label for="male">กรุณากรอกทะเบียนทะเบียนรถ</label>
+        <br/>
+        <br/>
+        <input type="Text" name="carNumber" id="carNumber" value="" />
+        <br />
+        <br/>
+        <input type="submit" value="ค้นหา" id="searchBtn" />
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20150130 14:46:22.280" generator="Robot 2.8.7 (Python 2.7.9 on win32)">
+<suite source="c:\Parkko\thaibev_parkko\ATDD\TestCal.txt" id="s1" name="TestCal">
+<test id="s1-t1" name="ทดสอบการคำนวนเงินทอนรถเลขทะเบียนสฬ5420">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URLPRD}</arg>
+</arguments>
+<msg timestamp="20150130 14:46:24.156" level="INFO">Opening browser 'firefox' to base url 'http://27.254.142.76:9090/web/Search.jsp'</msg>
+<status status="PASS" endtime="20150130 14:46:43.223" starttime="20150130 14:46:24.156"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>carNumber</arg>
+<arg>สฬ5420</arg>
+</arguments>
+<msg timestamp="20150130 14:46:43.223" level="INFO">Typing text 'สฬ5420' into text field 'carNumber'</msg>
+<status status="PASS" endtime="20150130 14:46:43.974" starttime="20150130 14:46:43.223"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>searchBtn</arg>
+</arguments>
+<msg timestamp="20150130 14:46:43.974" level="INFO">Clicking button 'searchBtn'.</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20150130 14:46:44.849" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150130 14:46:44.849" starttime="20150130 14:46:44.724"></status>
+</kw>
+<msg timestamp="20150130 14:46:44.849" level="FAIL">ValueError: Element locator 'searchBtn' did not match any elements.</msg>
+<status status="FAIL" endtime="20150130 14:46:44.849" starttime="20150130 14:46:43.974"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150130 14:46:44.849" critical="yes" starttime="20150130 14:46:24.140">ValueError: Element locator 'searchBtn' did not match any elements.</status>
+</test>
+<test id="s1-t2" name="ทดสอบการคำนวนเงินทอนรถเลขทะเบียนฌข1597">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URLPRD}</arg>
+</arguments>
+<msg timestamp="20150130 14:46:44.849" level="INFO">Opening browser 'firefox' to base url 'http://27.254.142.76:9090/web/Search.jsp'</msg>
+<status status="PASS" endtime="20150130 14:47:07.863" starttime="20150130 14:46:44.849"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>carNumber</arg>
+<arg>ฌข1597</arg>
+</arguments>
+<msg timestamp="20150130 14:47:07.863" level="INFO">Typing text 'ฌข1597' into text field 'carNumber'</msg>
+<status status="PASS" endtime="20150130 14:47:09.587" starttime="20150130 14:47:07.863"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>searchBtn</arg>
+</arguments>
+<msg timestamp="20150130 14:47:09.587" level="INFO">Clicking button 'searchBtn'.</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20150130 14:47:09.696" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150130 14:47:09.696" starttime="20150130 14:47:09.618"></status>
+</kw>
+<msg timestamp="20150130 14:47:09.696" level="FAIL">ValueError: Element locator 'searchBtn' did not match any elements.</msg>
+<status status="FAIL" endtime="20150130 14:47:09.696" starttime="20150130 14:47:09.587"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150130 14:47:09.696" critical="yes" starttime="20150130 14:46:44.849">ValueError: Element locator 'searchBtn' did not match any elements.</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20150130 14:47:09.712" starttime="20150130 14:46:22.280"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="2" pass="0" id="s1" name="TestCal">TestCal</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
