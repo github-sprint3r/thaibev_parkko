@@ -12,12 +12,12 @@ ${URLPRD}    http://27.254.142.76:9090/web/Search.jsp
 	Input Text    carNumber    SQ5420
 	Click Button    searchBtn
 
-	Wait Until Page Contains    70 BAHT
+	Wait Until Page Contains    70 Baht
 	Wait Until Page Contains    SQ5420
 	Input Text    receiveMoney    1000
 	Click Button    calculatebtn
 
-	Wait until page contains    930.00 BAHT
+	Wait until page contains    930.00 Baht
 	Element Should Contain    lbl500    1
 	Element Should Contain    lbl100    4
 	Element Should Contain    lbl50     0
@@ -31,12 +31,12 @@ ${URLPRD}    http://27.254.142.76:9090/web/Search.jsp
 	Input Text    carNumber    NB1597
 	Click Button    searchBtn
 
-	Wait Until Page Contains    1,330 BAHT
+	Wait Until Page Contains    1,330 Baht
 	Wait Until Page Contains    NB1597
 	Input Text    receiveMoney    2000
 	Click Button    calculatebtn
 
-	Wait until page contains    670 BAHT
+	Wait until page contains    670 Baht
 	Element Should Contain    lbl500    1
 	Element Should Contain    lbl100    1
 	Element Should Contain    lbl50     1
