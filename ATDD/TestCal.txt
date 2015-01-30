@@ -15,7 +15,7 @@ ${URLPRD}    http://27.254.142.76:9090/web/Search.jsp
 	Wait Until Page Contains    70 Baht
 	Wait Until Page Contains    SQ5420
 	Input Text    receiveMoney    1000
-	Click Button    calculatebtn
+	Click Button    calculateBtn
 
 	Wait until page contains    930.00 Baht
 	Element Should Contain    lbl500    1
@@ -34,7 +34,7 @@ ${URLPRD}    http://27.254.142.76:9090/web/Search.jsp
 	Wait Until Page Contains    1,330 Baht
 	Wait Until Page Contains    NB1597
 	Input Text    receiveMoney    2000
-	Click Button    calculatebtn
+	Click Button    calculateBtn
 
 	Wait until page contains    670 Baht
 	Element Should Contain    lbl500    1
