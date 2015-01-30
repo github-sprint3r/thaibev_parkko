@@ -39,6 +39,12 @@ ${URLPRD}    http://27.254.142.76:9090/web/LadyPark.jsp
 	Element Text Should Be    Park3    Lady Park
 	Element Text Should Be    Park4    Lady Park
 
+	Click Element   Park1
+	Click Element   Park2
+	Click Element   Park3
+	Click Element   Park4
+	Close Browser
+
 
 ทดสอบ ParkLady Case 2
 	[Tags]    Green
@@ -52,6 +58,16 @@ ${URLPRD}    http://27.254.142.76:9090/web/LadyPark.jsp
 	Click Element   Park2
 	Click Element   Park3
 	Click Element   Park4
+
+	Element Should Contain    Park1    FF4499
+	Element Should Contain    Park2    FF4499
+	Element Should Contain    Park3    FF4499
+	Element Should Contain    Park4    FF4499
+
+	Element Text Should Be    Park1    Lady Park
+	Element Text Should Be    Park2    Lady Park
+	Element Text Should Be    Park3    Lady Park
+	Element Text Should Be    Park4    Lady Park
 
 	Click Element   Park1
 	Click Element   Park2

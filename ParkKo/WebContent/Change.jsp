@@ -108,6 +108,9 @@
       </table>
 </form>
 </center>
+<script>
+displayChange("<%=request.getParameter("change")%>");
+</script>
 </body>
 </html>
       

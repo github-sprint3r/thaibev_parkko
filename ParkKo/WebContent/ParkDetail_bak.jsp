@@ -1,4 +1,6 @@
-﻿<%@ page import="java.net.URLDecoder" %>
+﻿<%
+@ page import java.net.URLDecoder;
+%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -7,7 +9,7 @@
 </head>
 <body>
 <center>
-<form method="post" action="calculateChange.jsp">
+<form method="post" action="Change.jsp">
       <table>
           <tr>
               <td style="text-align:right">
@@ -64,12 +66,15 @@
               </td>
           </tr>
       </table>
-<input type="hidden" name="parkPrice" id="parkPrice" />
 </form>
 <script>
-displayParkDetail("<%=request.getParameter("data")%>");
+<%
+String data = URLDecoder.decode(request.getParameter("data")); 
+%>
+displayParkDetail("<%=data%>");
 </script>
 
 </center>
 </body>
 </html>
+      
