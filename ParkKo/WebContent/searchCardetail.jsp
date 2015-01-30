@@ -30,7 +30,7 @@ request.setCharacterEncoding("UTF8");
 	}
 	br.close();
 	out.println(result);
-	response.sendRedirect("http://localhost:8080/ParkDetail.jsp?carNumber="+carNumber+"&data="+result);
+	response.sendRedirect("http://27.254.142.76:9090/ParkDetail.jsp?carNumber="+carNumber+"&data="+result);
 	
 	
 	%>
