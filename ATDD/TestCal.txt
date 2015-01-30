@@ -1,13 +1,13 @@
 *** Settings ***
-Library    selenium2Library
+Library    Selenium2Library
 
 *** Variables ***
 ${URLDEV}    http://27.254.142.75:9090/web/Search.jsp
-${URLPRD}    http://27.254.142.76:8080/web/Search.jsp
+${URLPRD}    http://27.254.142.76:9090/web/Search.jsp
 
 *** Testcases ***
 ทดสอบการคำนวนเงินทอนรถเลขทะเบียนสฬ5420
-	Open Browser    ${URLDEV}
+	Open Browser    ${URLPRD}
 	Input Text    carNumber    สฬ5420
 	Click Button    searchBtn
 
@@ -25,7 +25,7 @@ ${URLPRD}    http://27.254.142.76:8080/web/Search.jsp
 	Close Browser
 
 ทดสอบการคำนวนเงินทอนรถเลขทะเบียนฌข1597
- 	Open Browser    ${URLDEV}
+ 	Open Browser    ${URLPRD}
 	Input Text    carNumber    ฌข1597
 	Click Button    searchBtn
 
