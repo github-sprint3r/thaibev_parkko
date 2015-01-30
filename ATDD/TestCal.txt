@@ -1,0 +1,47 @@
+*** Settings ***
+Library    selenium2Library
+
+*** Variables ***
+${URLDEV}    http://27.254.142.75:9090/Search.jsp
+${URLPRD}    http://27.254.142.76:8080/Search.jsp
+
+*** Testcases ***
+ทดสอบการคำนวนเงินทอนรถเลขทะเบียนสฬ5420
+	Open Browser    ${URLDEV}
+	Input Text    carNumber    สฬ5420
+	Click Button    searchBtn
+
+	Wait Until Page Contains    70.00 บาท
+	Wait Until Page Contains    สฬ5420
+	Input Text    receiveMoney    1000.00
+	Click Button    calculatebtn
+
+	Wait until page contains    930.00 บาท
+	Element Should Contain    lbl500    1
+	Element Should Contain    lbl100    4
+	Element Should Contain    lbl50     0
+	Element Should Contain    lbl20     1
+	Element Should Contain    lbl10     1
+	Close Browser
+
+ทดสอบการคำนวนเงินทอนรถเลขทะเบียนฌข1597
+ 	Open Browser    ${URLDEV}
+	Input Text    carNumber    ฌข1597
+	Click Button    searchBtn
+
+	Wait Until Page Contains    1,330.00 บาท
+	Wait Until Page Contains    ฌข1597
+	Input Text    receiveMoney    2000.00
+	Click Button    calculatebtn
+
+	Wait until page contains    670.00 บาท
+	Element Should Contain    lbl500    1
+	Element Should Contain    lbl100    1
+	Element Should Contain    lbl50     1
+	Element Should Contain    lbl20     1
+	Element Should Contain    lbl10     0
+	Close Browser
+
+
+*** Keywords ***
+
