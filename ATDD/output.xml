@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20150130 15:44:56.077" generator="Robot 2.8.7 (Python 2.7.9 on win32)">
+<robot generated="20150130 15:47:51.401" generator="Robot 2.8.7 (Python 2.7.9 on win32)">
 <suite source="c:\Parkko\thaibev_parkko\ATDD\TestCal.txt" id="s1" name="TestCal">
 <test id="s1-t1" name="ทดสอบการคำนวนเงินทอนรถเลขทะเบียนสฬ5420">
 <kw type="kw" name="Selenium2Library.Open Browser">
@@ -7,8 +7,8 @@
 <arguments>
 <arg>${URLPRD}</arg>
 </arguments>
-<msg timestamp="20150130 15:44:56.374" level="INFO">Opening browser 'firefox' to base url 'http://27.254.142.76:9090/web/Search.jsp'</msg>
-<status status="PASS" endtime="20150130 15:45:04.076" starttime="20150130 15:44:56.374"></status>
+<msg timestamp="20150130 15:47:51.682" level="INFO">Opening browser 'firefox' to base url 'http://27.254.142.76:9090/web/Search.jsp'</msg>
+<status status="PASS" endtime="20150130 15:47:58.376" starttime="20150130 15:47:51.682"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Input Text">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -16,16 +16,16 @@
 <arg>carNumber</arg>
 <arg>สฬ5420</arg>
 </arguments>
-<msg timestamp="20150130 15:45:04.076" level="INFO">Typing text 'สฬ5420' into text field 'carNumber'</msg>
-<status status="PASS" endtime="20150130 15:45:04.748" starttime="20150130 15:45:04.076"></status>
+<msg timestamp="20150130 15:47:58.376" level="INFO">Typing text 'สฬ5420' into text field 'carNumber'</msg>
+<status status="PASS" endtime="20150130 15:47:58.501" starttime="20150130 15:47:58.376"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Click Button">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>searchBtn</arg>
 </arguments>
-<msg timestamp="20150130 15:45:04.748" level="INFO">Clicking button 'searchBtn'.</msg>
-<status status="PASS" endtime="20150130 15:45:06.719" starttime="20150130 15:45:04.748"></status>
+<msg timestamp="20150130 15:47:58.501" level="INFO">Clicking button 'searchBtn'.</msg>
+<status status="PASS" endtime="20150130 15:48:02.063" starttime="20150130 15:47:58.501"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Wait Until Page Contains">
 <doc>Waits until `text` appears on current page.</doc>
@@ -36,22 +36,22 @@
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
 <arguments>
 </arguments>
-<msg timestamp="20150130 15:45:12.005" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20150130 15:45:12.005" starttime="20150130 15:45:11.927"></status>
+<msg timestamp="20150130 15:48:07.188" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150130 15:48:07.188" starttime="20150130 15:48:07.094"></status>
 </kw>
-<msg timestamp="20150130 15:45:12.005" level="FAIL">Text '70.00 บาท' did not appear in 5 seconds</msg>
-<status status="FAIL" endtime="20150130 15:45:12.005" starttime="20150130 15:45:06.719"></status>
+<msg timestamp="20150130 15:48:07.188" level="FAIL">Text '70.00 บาท' did not appear in 5 seconds</msg>
+<status status="FAIL" endtime="20150130 15:48:07.188" starttime="20150130 15:48:02.063"></status>
 </kw>
 <doc></doc>
 <tags>
 <tag>5420</tag>
 </tags>
-<status status="FAIL" endtime="20150130 15:45:12.005" critical="yes" starttime="20150130 15:44:56.374">Text '70.00 บาท' did not appear in 5 seconds</status>
+<status status="FAIL" endtime="20150130 15:48:07.188" critical="yes" starttime="20150130 15:47:51.667">Text '70.00 บาท' did not appear in 5 seconds</status>
 </test>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="FAIL" endtime="20150130 15:45:12.005" starttime="20150130 15:44:56.077"></status>
+<status status="FAIL" endtime="20150130 15:48:07.188" starttime="20150130 15:47:51.401"></status>
 </suite>
 <statistics>
 <total>

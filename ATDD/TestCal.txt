@@ -9,15 +9,15 @@ ${URLPRD}    http://27.254.142.76:9090/web/Search.jsp
 ทดสอบการคำนวนเงินทอนรถเลขทะเบียนสฬ5420
 	[Tags]     5420
 	Open Browser    ${URLPRD}
-	Input Text    carNumber    สฬ5420
+	Input Text    carNumber    SQ5420
 	Click Button    searchBtn
 
-	Wait Until Page Contains    70.00 บาท
-	Wait Until Page Contains    สฬ5420
+	Wait Until Page Contains    70.00 BAHT
+	Wait Until Page Contains    SQ5420
 	Input Text    receiveMoney    1000.00
 	Click Button    calculatebtn
 
-	Wait until page contains    930.00 บาท
+	Wait until page contains    930.00 BAHT
 	Element Should Contain    lbl500    1
 	Element Should Contain    lbl100    4
 	Element Should Contain    lbl50     0
@@ -28,15 +28,15 @@ ${URLPRD}    http://27.254.142.76:9090/web/Search.jsp
 ทดสอบการคำนวนเงินทอนรถเลขทะเบียนฌข1597
 	[Tags]     1597
  	Open Browser    ${URLPRD}
-	Input Text    carNumber    ฌข1597
+	Input Text    carNumber    NB1597
 	Click Button    searchBtn
 
-	Wait Until Page Contains    1,330.00 บาท
-	Wait Until Page Contains    ฌข1597
+	Wait Until Page Contains    1,330.00 BAHT
+	Wait Until Page Contains    NB1597
 	Input Text    receiveMoney    2000.00
 	Click Button    calculatebtn
 
-	Wait until page contains    670.00 บาท
+	Wait until page contains    670.00 BAHT
 	Element Should Contain    lbl500    1
 	Element Should Contain    lbl100    1
 	Element Should Contain    lbl50     1
