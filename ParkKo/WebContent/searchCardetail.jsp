@@ -24,13 +24,13 @@ request.setCharacterEncoding("UTF8");
 	while ( (line = br.readLine()) != null)
 	{
 		if (line.startsWith(carNumber) ) {
-			result = line +"|70";
+			result = line +"|70.00 บาท";
 			break;
 		}
 	}
 	br.close();
 	out.println(result);
-	response.sendRedirect("http://27.254.142.76:9090/web/ParkDetail.jsp?carNumber="+carNumber+"&data="+result);
+	response.sendRedirect("http://27.254.142.76:9090/ParkDetail.jsp?carNumber="+carNumber+"&data="+result);
 	
 	
 	%>
