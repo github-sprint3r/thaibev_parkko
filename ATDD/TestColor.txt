@@ -1,0 +1,37 @@
+*** Settings ***
+Library    Selenium2Library
+
+*** Variables ***
+${URLPRD}    http://27.254.142.76:9090/web/LadyPark.jsp
+
+*** Testcases ***
+ทดสอบ ParkLady Case 1
+	[Tags]    Pink
+	Open Browser    ${URLPRD}
+	Element Should Contain    Park1    77bb44
+	Element Should Contain    Park2    77bb44
+	Element Should Contain    Park3    77bb44
+	Element Should Contain    Park4    77bb44
+
+	Click Element   Park1
+	Click Element   Park2
+	Click Element   Park3
+	Click Element   Park4
+
+	Element Should Contain    Park1    FF4499
+	Element Should Contain    Park2    FF4499
+	Element Should Contain    Park3    FF4499
+	Element Should Contain    Park4    FF4499
+
+	Element Text Should Be    Park1    Lady Park
+	Element Text Should Be    Park2    Lady Park
+	Element Text Should Be    Park3    Lady Park
+	Element Text Should Be    Park4    Lady Park
+	Refresh Browser
+	Element Should Contain    Park1    FF4499
+	Element Should Contain    Park2    FF4499
+	Element Should Contain    Park3    FF4499
+	Element Should Contain    Park4    FF4499
+
+
+*** Keywords ***
