@@ -8,7 +8,7 @@
 	String LadyparkReq = request.getParameter("LadyParkDB");
 	
 
-	String paths= getServletContext().getRealPath("Database\LadyParkDB.txt");
+	String paths= getServletContext().getRealPath("Database/LadyParkDB.txt");
 
 	//String paths="C:\\Users\\st\\workspace\\ParkKo\\WebContent\\Database\\LadyParkDB.txt"; 
 	
