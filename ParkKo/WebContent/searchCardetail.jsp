@@ -24,7 +24,7 @@ request.setCharacterEncoding("UTF8");
 	while ( (line = br.readLine()) != null)
 	{
 		if (line.startsWith(carNumber) ) {
-			result = line +"|25";
+			result = line +"|70";
 			break;
 		}
 	}
