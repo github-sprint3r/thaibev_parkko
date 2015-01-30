@@ -1,2 +1,6 @@
 .DS_Store
-Web/build/target/
+ParkKo/build/target/
+ParkKo/.classpath
+ParkKo/.project
+ParkKo/.settings/
+*.class
