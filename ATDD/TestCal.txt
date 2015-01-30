@@ -2,8 +2,8 @@
 Library    selenium2Library
 
 *** Variables ***
-${URLDEV}    http://27.254.142.75:9090/Search.jsp
-${URLPRD}    http://27.254.142.76:8080/Search.jsp
+${URLDEV}    http://27.254.142.75:9090/web/Search.jsp
+${URLPRD}    http://27.254.142.76:8080/web/Search.jsp
 
 *** Testcases ***
 ทดสอบการคำนวนเงินทอนรถเลขทะเบียนสฬ5420
